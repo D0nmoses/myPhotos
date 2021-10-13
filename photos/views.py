@@ -4,7 +4,8 @@ from django.shortcuts import render
 
 def index(request):
     
-    return render(request, 'all-pics/index.html')
+    images = Image.all_images()
+    return render(request, 'all-pics/index.html', {"images":images})
 
 
 def search_results(request):
