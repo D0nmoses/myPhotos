@@ -21,3 +21,11 @@ input[type=search]:focus {
 	border-color: #333;
 	border: solid 1px #fff;
 }
+.dpg-album-card-image {
+    width:300px;
+    height:225px;
+}
+
+.dpg-album-card, .dpg-album-image {
+    max-width:300px;
+}
