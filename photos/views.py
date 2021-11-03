@@ -11,4 +11,4 @@ def index(request):
 
 def search_results(request):
 
-    return render(request, 'all-pics/index.hmtl')
+    return render(request, 'all-pics/index.html')
