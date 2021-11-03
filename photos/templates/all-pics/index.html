@@ -7,8 +7,8 @@
         <div class="row">
             {% for image in images %}
 
-            <div class="col-lg-4 mb-4">
-                <div class="card" data-target="#{{image.id}}">
+            <div class="col-lg-4 mb-4" data-target="#{{image.id}}" data-toggle="modal">
+                <div class="card">
                     <img src="{{image.image.url}}" alt="" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">{{image.image_name}}</h5>
@@ -18,7 +18,7 @@
             </div>
             
     
-            <div class="modal fade " id="{{image.id}}" tabindex="-1" role="dialog"
+            <div class="modal fade" id="{{image.id}}" tabindex="-1" role="dialog"
                 aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-md" role="document">
                     <div class="modal-content modalcard">
